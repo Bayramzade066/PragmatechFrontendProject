@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.qutu, body .container .box1, body .container .box2, body .container .box3 {
+  width: 250px;
+  height: 200px;
+  background-color: #2525c0;
+  margin: 20px;
+  float: left;
+}
+
+body {
+  background: #16a085;
+}
+
+body .container {
+  height: 1000px;
+  width: 900px;
+  margin: 0px auto;
+  background-color: #bdc3c7;
+}
+
+body .container header {
+  height: 50px;
+  width: 900px;
+  background: #27ae60;
+}
+
+body .container header ul li {
+  float: left;
+}
+
+body .container header ul li a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 180px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #bdc3c7;
+}
+
+body .container header ul li a:hover {
+  color: #ecf0f1;
+}
+
+body .container .box1 {
+  border-width: 4px;
+  border-style: dashed;
+  border-color: green;
+}
+
+body .container .box2 {
+  border-width: 3px;
+  border-style: solid;
+  border-color: yellow;
+}
+
+body .container .box3 {
+  border-width: 4px;
+  border-style: dashed;
+  border-color: green;
+}

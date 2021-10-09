@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+$ana-renk:#16a085;
+$cercive:#bdc3c7;
+$header:#27ae60;
+$text:#ecf0f1;
+@mixin border($gen,$tip,$renk) {
+    border-width:$gen ;
+    border-style:$tip ;
+    border-color: $renk ;
+}
+.qutu{
+    width: 250px;
+    height: 200px;
+    background-color: rgb(37, 37, 192);
+    margin: 20px;
+    float: left;
+}
+
+body{
+    background : $ana-renk;
+    .container{
+        height: 1000px;
+        width: 900px;
+        margin: 0px auto;
+        background-color: $cercive;
+        header{
+            height: 50px;
+            width: 900px;
+            background: $header;
+            ul{
+                li{
+                    float: left;
+                    a{
+                        display: block;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        width: 180px;
+                        font-size: 24px;
+                        text-decoration: none;
+                        color: $cercive;
+                        &:hover{
+                            color: $text;
+                        }
+
+                    }
+                }
+            }
+        }
+        .box1{
+            @extend .qutu;
+            @include border(4px,dashed,green);
+        }
+        .box2{
+            @extend .qutu;
+            @include border(3px,solid,yellow);
+        }
+        .box3{
+            @extend .qutu;
+            @include border(4px,dashed,green);
+        }
+    }
+}
