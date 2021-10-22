@@ -1,0 +1,101 @@
+$color:#458FF6;
+$color-dark:darken($color,15%);
+.btn{
+    width: 12.5rem;
+    height: 3.5rem;
+    border:1.4px solid $color;
+    border-radius: 55px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_white{
+    background-color:white;
+    p{
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 3.75rem;
+        color: $color;
+    }
+
+    &:hover{
+        background-color: $color;
+        cursor: pointer;
+        transition: 0.5s;
+        p{
+            color: white;
+        }
+    }
+}
+
+.dots{
+    position: absolute;
+    width: 4.4393rem;
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-between;
+    flex-wrap: wrap;
+    
+    .dot{
+        width: 0.65375rem;
+        opacity: 0.5;
+        cursor: pointer;
+        margin: 0.4625rem 0.3125rem;
+        height: 0.65125rem;
+        border-radius: 50%;
+        background-image: linear-gradient(#97C3F9,
+        #93C1F9
+        );
+    }
+}
+
+.trafalgar__text{
+    width: 30.0625rem;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    h1{
+        width: 30.0625rem;
+        height: 7rem;
+        font-weight: bold;
+        line-height: 3.5rem;
+        font-size: 2.25rem;
+
+    }
+    span{
+        display: inline-block;
+        width: 3.5rem;
+        height: 2px;
+        background-color: black;
+        border-radius: 0.625rem;
+        margin: 1.625rem 0 1.9375rem 0;
+    }
+    >p{
+        width: 28.125rem;
+        height: 7.5rem;
+        font-size: 1.125rem;
+        line-height:1.875rem;
+        color: #7D7987;
+        margin-bottom: 2.5rem;
+    }
+
+}
+.h3_2{
+    width: 16.5625rem !important;
+    height:4rem !important ;
+}
+.ws{
+    width: 15.875rem !important;
+    height: 6rem !important;
+}
+.mt{
+    margin-top: 14.3125rem  !important;
+    padding-top: 0 !important;
+    span{
+        margin-top: 1.875rem !important;
+    }
+}

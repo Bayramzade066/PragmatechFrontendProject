@@ -1,1 +1,8 @@
 dersden kenar isler.
+
+
+javascript ilk defe 26 il evvel 1995ci ilde Brendan Eich terefinden yaradilmisdir. programin ilk adi mocha olaraq bilinsede
+eslinde resmi adi Livescript olmusdur. sonradan adi deyisdirileke javascript olaraq qoyulub. java ile adlari yazilis sekli ve kitabxanalardaki
+oxsarliqlari xaricinde hec bir baglantisi yoxdur. Javascriptin yazi formasi C programa dilinden toredilmisdir. bundan basqa javascript 
+ETMAscript terefinden standartlasdirilir.Javascriptin esas yaranma sebebi htmli daha canlandirmaqdir, meselen bir forumda bosluq qaldiqda bunu
+bildirmek ve ya her hansisa bir menu nu gizletmek  ve s.
