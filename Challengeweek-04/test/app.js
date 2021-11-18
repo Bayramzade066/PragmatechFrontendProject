@@ -1,6 +1,17 @@
+// function Salamde() {
+//     return function() {
+//        console.log("Salam!");
+//     }
+//  }
+//  Salamde()();
+//  // Salam!
 
 
-5 == "5" //True
-5 === "5" //False
-console.log(null === undefined)
 
+ const Salamde = function() {
+    return function() {
+        console.log('Salamlar!')
+    }
+}
+const myFunc = Salamde()
+myFunc()
