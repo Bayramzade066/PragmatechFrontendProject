@@ -160,7 +160,7 @@ function num(callback) {
 
 ```
 --------------------------------------------------------------------------------------------------------------
-## Sual-9 : typeof operatoru nədir? (71)
+## Sual-9 : typeof operatoru nədir?
 #### Cavab : typeof operatoru verilenin tipini teyin etmek ucun istifade olunur. 7 tip vardir: number,boolean,string,function,symbol,undifiend,object. kodlarla izah etmeli olarsaq :
 ```
 let num = 5 
@@ -197,7 +197,7 @@ console.log(a)
 //Null-yəni boş yoxluqdur.
 ```
 --------------------------------------------------------------------------------------------------------------
-## Sual-11 : Eventlər nələrdir? (100)
+## Sual-11 : Eventlər nələrdir? 
 #### Cavab : HTMLdə olan hadisələrə eventlər deyilir 3 növ event var Web sehifenin yuklenmesi ile olan hadiseler, butona click olunmasi ile yaranan hadiseler ve .. bu yaranan Html hadiseleri neticesinde neyinse bas vermesini teleb edir ve javascript bu hadiseler zamani teleb olunan  isleri heyata kecirdir. meselen bir numune ile Htmlde butona click etmek ucun onclick kodunu yazaq :
 ```
 <button onclick="alert(Date());">Buraya tıkla</button>
@@ -335,8 +335,16 @@ console.log(offset);
 ## Sual-20 : ES6 nedir? (305)
 #### Cavab : ECMAscript6 2015ci ilde yaranmisdir ve Javascript dili ucun yeni nesil bir standartdir.ECMA international terefinden ECMA-262 ve ISO/IEC 16262 standartlariyla standartlasdirilib.ES6 ile heyatimiza const ve let anlayisi daxil olur.
 --------------------------------------------------------------------------------------------------------------
-## Sual-21 : let ve const tekrar deyer verile bilermi? (306)
-#### Cavab : const ile let tekrar deyer vermek mumkun deyil. bunu etdiyiniz zaman errorla qarsilasarsiniz. var keywordu ile yaradilan variable function scope ozelliyi dasiyir yeni bir funksiya daxilinde yaratdiqimiz var, funksiya xaricindede cagirila biler. Lakin let ile bir funksiya daxilinde variable yaratdiqimiz zaman bezeyli moterize xaricinde bu let variable ni yeniden cagira bilmerik, bunun sebebi ise Let-in block scope ozelliyidir.
+## Sual-21 : Pure function nədir?
+#### Cavab : Pure function-un özəlliyi odurki, verilən dəyər əldə edilən dəyərlə eyni olur:
+```
+const Pure = (input)=>{
+        let output = input
+        return output
+}
+
+console.log(Pure(8))
+```
 --------------------------------------------------------------------------------------------------------------
 ## Sual-22 :  bir object in daxilindekileri list halina nece getirmek olar?
 #### Cavab : indi istifade edeceyimiz method objectin daxilindekileri cixaradaq bir array daxiline yigir, bu Object.getOwnPropertyNames() methodudur. Numune ile gostermeli olarsaq :
@@ -395,11 +403,8 @@ console.log(citynames);
 ```
 #### gorduyunuz kimi Array.from yazaraq obyektden istediymiz deyerleri aldiq ve consolda gosterdik.
 --------------------------------------------------------------------------------------------------------------
-## Sual-27 : bir arrayin tekrar olunmayan deyerlerini nece secmek olar?
-#### Cavab : set methodu istifade ederek bir arrayin daxilinde her deyerden 1 eded olaraq neticeye cixara bilersiz. Numune :
-```
-console.log([...new Set([565, 385, 478, 431, 385, 565, 431])]); // [565, 385, 478, 431]
-```
+## Sual-27 :strict mode nədir?
+#### Cavab : Strict mode ES6-la birlikdə əlavə olunmuşdur.Strict mode-dan istifadə etmək üçün ilk sətirə ‘use strict’ yazmaq kifayətdir.Biz strict mode-dan istifadə etdikdə daha konkret kod yazmalı oluruq.Hansı ki normal bir kodu yazdıqda error vermədiyi təqdirdə strict moddan istifadə etdikdə errorla qarşılaşırıq.
 --------------------------------------------------------------------------------------------------------------
 ## Sual-28 : 2 ve daha artiq arrayi nece birlesdirmek olar? (344)
 #### Cavab : contact() methodu ile 2 ve daha artiq arraylari bir yere yigmaq mumkundur.Numune :
@@ -442,7 +447,153 @@ console.log(obj)
 // 95
 ```
 --------------------------------------------------------------------------------------------------------------
-## Sual-33 :
+## Sual-33 :Arrayin ilk herfini boyuk etmek olar? (129)
+#### Cavab : bunun ucun ilk once cumlenin 1ci herfini secirik sonra toUppercase methodunnan istifade olunur cumlenin ilk herfini boyuk olaraq yazdiririq ve sonra cumlenin ilk herifi ile yerini deyisirik. numune olaraq :
+```
+function ilkHerifBoyuk(string) {
+    return string[0].toUpperCase() + string.slice(1);
+}
 
+console.log(ilkHerifBoyuk('pragmatech'))
+//Pragmatech
+``` 
+--------------------------------------------------------------------------------------------------------------
+## Sual-34 : stringin ilk deyerini yoxlamaq ucun hansi methoddan istifade olunur?
+#### Cavab : ES6 ile birlikte gelen startsWith() methodu ile bir deyeri bu methodun daxiline yazaraq stringin ilk deyeri olub olmadiqini yoxluya bilirik. butun browserler desteklemesede istifade qaydasi beledir :
+```
+let string = "Pragmatech education"
+console.log(string.startsWith("Pragmatech"));//true
+console.log(string.startsWith("education"));//false
+```
+--------------------------------------------------------------------------------------------------------------
+## Sual-35 :   Javascript və Typescript arasındakı fərqlər nələrdir? 
+#### Cavab : Dinamik veb səhifələr hazırlanır. Səhvlər yalnız kod işləyərkən tapıla bilir. Birbaşa brauzerlərdə istifadə edilə bilər. JS kitabxanaları standart olaraq işləyir. Modullar, generiklər və ya interfeys üçün dəstək yoxdur. TYPESCRIPT: Böyük layihələr üçün kod mürəkkəbliyini aradan qaldırır. Səhvlər kod işləyən zamanı tapıla və düzəldilə bilər Güclü şəkildə yazılmışdır, həm statik, həm də dinamik yazmağı dəstəkləyir Brauzerlər üçün başa düşülən olması üçün JavaScript koduna çevrilir.
+--------------------------------------------------------------------------------------------------------------
+## Sual-36 :bir arrayin tekrar olunmayan deyerlerini nece secmek olar?
+#### Cavab : set methodu istifade ederek bir arrayin daxilinde her deyerden 1 eded olaraq neticeye cixara bilersiz. Numune :
+```
+console.log([...new Set([565, 385, 478, 431, 385, 565, 431])]); // [565, 385, 478, 431]
+```
+--------------------------------------------------------------------------------------------------------------
+## Sual-37 : Javascript isNan nedir?
+#### Cavab :  bəzən kod yazdığımız zaman Nan erroru ilə qarşılaşırıq.Nan-dan qısaca danışası olsaq Nan-ın mənası reqem deyil mənasındadır.Bu bir error növüdür.Ancaq bu məqalədə danışacağımız məsələ isNan metodudur. isNan metodunun mənası isə bir növ daxil edilən parametr və ya dəyər mənasındadır.Yəni aldığı dəyəri rəqəm olub olmadığını təyin edir.Düzü o qədər də istifadə olunmur ancaq bilmək faydalıdır.Qısa bir kodla bunu göstərim.
+--------------------------------------------------------------------------------------------------------------
+## Sual-38 : typeof operator
+#### cavab : typeof operatoru verilenin tipini teyin etmek ucun istifade olunur. 7 tip vardir: number,boolean,string,function,symbol,undifiend,object. kodlarla izah etmeli olarsaq :
+```
+let num = 5 
+console.log(typeof(num))
+//number
 
+let str = 'bu meqale 90+ almalidir :)';
+console.log(typeof(str));
+//string
+
+let b = true
+console.log(typeof(b));
+//boolean
+
+var fun = function() {
+    console.log('men functionam');
+};
+typeof fun //function
+```
+--------------------------------------------------------------------------------------------------------------
+## Sual-39 : Sintaksis error nədir? 
+#### Cavab : Javascriptdə kod yazarkən ya kod isləmir ya error verir.herseyin yolunda oldugunu fikirlesdiyimiz zaman .Birden erroru görürük sintaksisdən olduğunu bilirik. Javascriptdə kodlar müəyyən qaydaya uygun yazılmışdır.Məsələn array içərisində vergullerden yalnız birini qoymasaq errorla qarşılaşa bilərik.Ya da funksiya yazarkən düzgün mötərizələrdən istifadə etməsək və.s kimi bir çox qaydaya uyğunsusluqlardan istifadə etməklə bu errorları görə bilərik.
+--------------------------------------------------------------------------------------------------------------
+## Sual-41 : console.table() ne ucun istifade olunur?
+#### Cavab :  bu metodla consola oturduyumuz obyektin goruntusu daha seliqeli olan table formasinda gorsenecek. Numune :
+```
+const users = 
+[{'ad':'Murad','Bal': 95, 'seher':'Baku'},
+{'ad':'Vusal','Bal':78, 'seher':'Gence'},
+{'ad':'Rovshen','Bal': 92, 'seher':'Celilabad'} ];
+console.table(users);
+```
+--------------------------------------------------------------------------------------------------------------
+## Sual-42 : stopproparation() nedir?
+#### Cavab : stopPropagation() özəlliyi eyni event-in təkrarlanmasının qarşısını alır. adeten parent element ucun istifade olunur meselen her hansisa parent elemntin childide ozude alert verir ve 2si ust uste dusduyu ucun bu methoddan istifade edilerek biri stoplanir.
+```
+function func1(event) {
+  alert("div1");
+  
+    event.stopPropagation();
+  
+}
+
+function func2() {
+  alert("div2");
+}
+```
+--------------------------------------------------------------------------------------------------------------
+## Sual-43 : Javascriptdə window-un ölçüsünü necə öyrənmək olar?
+#### Cavab : innerWidth metodu ilə. Yazılışı:
+```
+var x = window.innerWidth
+console.log(x)
+```
+--------------------------------------------------------------------------------------------------------------
+## Sual-44 : Javascriptdə Anonymous Function nədir?
+#### Cavab :Adı olmayan function-a anonymous function deyilir. Hansısa variable-a dəyər olaraq verilir.Və ada ehtiyac olmadan variable adı ilə çağırılır.
+--------------------------------------------------------------------------------------------------------------
+## Sual-45 :  Html elementlərini javascriptdə necə tapmaq olar?
+#### Cavab : Bunu 4 yolla etmək mümkündür:
+```
+— document.querySelector(“”)
+— document.getElementById(“”)
+— document.getElementsByClassName(“”)
+— document.getElementsByTagName(“”)
+```
+--------------------------------------------------------------------------------------------------------------
+## Sual-46 : Javascriptdə onluq kəsri müəyyən bir onluğa gətirmək üçün hansı metoddan istifadə olunur?
+#### Cavab :  Bunun üçün toFixed() metodundan istifadə olunur:
+```
+var x = 0.426534654
+console.log(x.toFixed(2))
+
+```
+--------------------------------------------------------------------------------------------------------------
+## Sual-47 : let ve const tekrar deyer verile bilermi? 
+#### Cavab : const ile let tekrar deyer vermek mumkun deyil. bunu etdiyiniz zaman errorla qarsilasarsiniz. var keywordu ile yaradilan variable function scope ozelliyi dasiyir yeni bir funksiya daxilinde yaratdiqimiz var, funksiya xaricindede cagirila biler. Lakin let ile bir funksiya daxilinde variable yaratdiqimiz zaman bezeyli moterize xaricinde bu let variable ni yeniden cagira bilmerik, bunun sebebi ise Let-in block scope ozelliyidir.
+--------------------------------------------------------------------------------------------------------------
+## Sual-48 : IIFE function nədir?
+#### Cavab :  acilisi:(Immediately Invoked Function Expression). Yəni, çağırılmağa ehtiyacı olmadan dərhal işə düşən funksiyadır.
+--------------------------------------------------------------------------------------------------------------
+## Sual-49 :jsde form nece sabit etmek olar ?
+####  Cavab : bunun ucun submit metodunnan istifade olunur :
+```
+<!DOCTYPE html>
+<html>
+<body>
+<form id="Form" action="">
+  AD: <input type="text" name="fname"><br>
+  Soyad: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="myfunction()" value="Submit form">
+</form>
+
+<script>
+function myfunction() {
+  document.getElementById("Form").submit();
+}
+</script>
+
+</body>
+</html>
+```
+--------------------------------------------------------------------------------------------------------------
+## Sual-50 : bir obyektin deyerlerini nece arraya kecirmek olar?
+#### : arraye kocurmek ucun bize lazim olan method from methodudur.Numune :
+```
+const seher = [
+  {ad : 'Fransa',paytaxt : 'Paris'},
+  {ad : 'Azerbaycan',paytaxt : 'Baki'},
+  {ad : 'Turkiye',paytaxt : 'Ankara'},
+  {ad : 'Ingiltere',paytaxt : 'London'},
+];
+
+const citynames = Array.from(seher,({paytaxt}) => paytaxt);
+console.log(citynames);
+```
+#### gorduyunuz kimi Array.from yazaraq obyektden istediymiz deyerleri aldiq ve consolda gosterdik.
 

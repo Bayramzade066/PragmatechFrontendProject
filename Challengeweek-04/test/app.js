@@ -187,10 +187,24 @@
 // alert(ad)
 
 
-const obj = {
-  a : 4
-};
-Object.freeze(obj)
+// const obj = {
+//   a : 4
+// };
+// Object.freeze(obj)
 
-obj.a = 6;
-console.log(obj)
+// obj.a = 6;
+// console.log(obj)
+
+// const ad = [];
+// ad.push('Mehemmed');
+// console.log(ad)
+
+
+// function ilkHerifBoyuk(string) {
+//     return string[0].toUpperCase() + string.slice(1);
+// }
+
+// console.log(ilkHerifBoyuk('pragmatech'))
+let string = "Pragmatech education"
+console.log(string.startsWith("Pragmatech"));//true
+console.log(string.startsWith("education"));//false
