@@ -205,6 +205,6 @@
 // }
 
 // console.log(ilkHerifBoyuk('pragmatech'))
-let string = "Pragmatech education"
-console.log(string.startsWith("Pragmatech"));//true
-console.log(string.startsWith("education"));//false
+// let string = "Pragmatech education"
+// console.log(string.startsWith("Pragmatech"));//true
+// console.log(string.startsWith("education"));//false
