@@ -24,11 +24,11 @@
     <Button class="button1">List 1 Hide</Button>
     <p>List 2</p>
     <ul>
-        <li>C#</li>
-        <li>Python</li>
-        <li>Java</li>
-        <li>c++</li>
-        <li>PHP</li>
+        <li id="l2">C#</li>
+        <li id="l2">Python</li>
+        <li id="l2">Java</li>
+        <li id="l2">c++</li>
+        <li id="l2">PHP</li>
     </ul>
     <button class="button2">List 2 Hide</button>
     <script>
@@ -41,7 +41,7 @@
         $(function(){
             $(".button1").click(function(){
                 $("ul:first li").hide(); 
-                
+
             });
             $(".button2").click(function(){
                 $("ul:last li").hide();
@@ -50,3 +50,31 @@
     </script>
 </body>
 </html>
+
+        <!-- <tr>
+            <th>Mehemmed</th>
+            <th>Bayramzade</th>
+            <th>2000</th>
+            <th>21</th>
+            <th>16.08.2020</th>
+            <th>16.06.2021</th>
+            <th class="info">Update<button>Click me</button></th>
+        </tr>
+        <tr>
+            <th>Rovshen</th>
+            <th>Sahbazov</th>
+            <th>1997</th>
+            <th>24</th>
+            <th>17.05.2020</th>
+            <th>5.03.2021</th>
+            <th class="info">Update<button>Click me</button></th>
+        </tr>
+        <tr>
+            <th>Ruslan</th>
+            <th>Rustemov</th>
+            <th>1999</th>
+            <th>22</th>
+            <th>27.11.2019</th>
+            <th>29.9.2020</th>
+            <th class="info">Update<button>Click me</button></th>
+        </tr>
