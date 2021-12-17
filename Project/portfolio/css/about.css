@@ -1,0 +1,101 @@
+.about {
+  width: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-all {
+  width: 84rem;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30%;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  padding-top: 10rem;
+}
+
+.about .about-all .about-img {
+  width: 84rem;
+  height: 48rem;
+  background-image: url("../img/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 99;
+}
+
+.about .about-all .about-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 84rem;
+  margin-top: 3rem;
+}
+
+.about .about-all .about-info .about-text1 {
+  width: 40rem;
+}
+
+.about .about-all .about-info .about-text1 h3 {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.about .about-all .about-info .about-text1 p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  letter-spacing: .5px;
+  font-weight: 400;
+  color: #bbbbbb;
+}
+
+.about .about-all .about-info .about-text2 {
+  width: 40rem;
+  padding-left: 5.5rem;
+}
+
+.about .about-all .about-info .about-text2 .about-data {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  letter-spacing: .5px;
+  font-weight: 400;
+  color: #bbbbbb;
+  padding-left: 3rem;
+}
+
+.about .about-all .about-info .about-text2 .about-data span {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: left;
+  min-width: 90px;
+}

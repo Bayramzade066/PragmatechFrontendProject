@@ -1,0 +1,73 @@
+.about{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    .about-all{
+        width:84rem;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30%;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        padding-top: 10rem;
+        .about-img{
+            width: 84rem;
+            height: 48rem;
+            background-image: url("../img/1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            z-index: 99;
+        }
+        .about-info{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 84rem;
+            margin-top: 3rem;
+            .about-text1{
+                // margin-right: 12rem;
+                width: 40rem;
+                h3{
+                    font-size: 2.2rem;
+                    margin-bottom: 2.5rem;
+                    color: #ffffff;
+                }
+                p{
+                    font-size: 1.5rem;
+                    line-height: 3rem;
+                    letter-spacing: .5px;
+                    font-weight: 400;
+                    color:#bbbbbb;
+                }
+
+            }
+            .about-text2{
+                width: 40rem;
+                padding-left: 5.5rem;
+                .about-data {
+                text-align: left;
+                font-size: 1.5rem;
+                    line-height: 3rem;
+                    letter-spacing: .5px;
+                    font-weight: 400;
+                    color:#bbbbbb;
+                    padding-left: 3rem;
+                span{
+                    display: inline-block;
+                    color: #ffffff;
+                    font-size: 1.5rem;
+                    text-align: left;
+                    min-width: 90px;
+                
+
+                }
+        }
+    }
+    }
+}}

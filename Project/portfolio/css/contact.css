@@ -1,0 +1,240 @@
+html {
+  font-size: 10px;
+}
+
+.lines {
+  z-index: -99;
+}
+
+*:focus {
+  outline: none;
+}
+
+.contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-all {
+  width: 84rem;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.contact .contact-all .contact-head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.contact .contact-all .contact-head .contact-div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #999;
+  width: 7.9rem;
+  height: 3.9rem;
+  padding: 1rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.contact .contact-all .contact-head .head-text {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.contact .contact-all .contact-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact-all .contact-inputs input {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #111111;
+  width: 83rem;
+  height: 4.4rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 3rem;
+}
+
+.contact .contact-all .contact-inputs input::-webkit-input-placeholder {
+  color: #fff;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  line-height: 1.6rem;
+}
+
+.contact .contact-all .contact-inputs input:-ms-input-placeholder {
+  color: #fff;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  line-height: 1.6rem;
+}
+
+.contact .contact-all .contact-inputs input::-ms-input-placeholder {
+  color: #fff;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  line-height: 1.6rem;
+}
+
+.contact .contact-all .contact-inputs input::placeholder {
+  color: #fff;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  line-height: 1.6rem;
+}
+
+.contact .contact-all .contact-textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact-all .contact-textbox input {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #111111;
+  width: 83rem;
+  height: 12rem;
+  padding: 1rem;
+  padding-bottom: 8rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 3rem;
+}
+
+.contact .contact-all .contact-textbox input::-webkit-input-placeholder {
+  color: #fff;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  line-height: 1.6rem;
+}
+
+.contact .contact-all .contact-textbox input:-ms-input-placeholder {
+  color: #fff;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  line-height: 1.6rem;
+}
+
+.contact .contact-all .contact-textbox input::-ms-input-placeholder {
+  color: #fff;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  line-height: 1.6rem;
+}
+
+.contact .contact-all .contact-textbox input::placeholder {
+  color: #fff;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  line-height: 1.6rem;
+}
+
+.contact .contact-all .contact-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact-all .contact-button .contact-btn {
+  color: black;
+  background-color: #fff;
+  font-size: 1.5rem;
+  padding: 1.5rem 2.5rem;
+  margin-right: 9rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 0.2rem;
+}
+
+.contact .contact-all .contact-button .contact-btn:hover {
+  letter-spacing: 1.7px;
+  font-size: 1.5rem;
+  padding: 1.5rem 2.7rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
