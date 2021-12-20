@@ -1,3 +1,15 @@
+html {
+  font-size: 10px;
+}
+
+.lines {
+  z-index: -99;
+}
+
+*:focus {
+  outline: none;
+}
+
 .portfolio {
   width: 100%;
   display: none;
@@ -28,5 +40,72 @@
   margin-left: 30%;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  padding-top: 10rem;
+  margin-right: 5rem;
+}
+
+.portfolio .portfolio-all .portfolio-head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+}
+
+.portfolio .portfolio-all .portfolio-head .portfolio-div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #999;
+  width: 8.9rem;
+  height: 3.9rem;
+  padding: 1rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.portfolio .portfolio-all .portfolio-head .portfolio-text {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.portfolio .portfolio-all .portfolio-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 83rem;
+}
+
+.portfolio .portfolio-all .portfolio-img .portfolio-img {
+  background-image: url("../img/");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 39rem;
+  height: 41.5rem;
+  margin-bottom: 5rem;
+}
+
+.portfolio .portfolio-all .portfolio-img a {
+  padding-left: 3rem;
 }
