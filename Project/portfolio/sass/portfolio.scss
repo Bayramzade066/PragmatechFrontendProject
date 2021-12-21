@@ -1,20 +1,9 @@
-html{
-    font-size: 10px;
-}
-.lines{
-    z-index: -99;
-}
-*:focus {
-    outline: none;
-}
-
-
 
 
 
 .portfolio{
     width: 100%;
-    display: none;
+    display: none;  
     justify-content: center;
     align-items: center;
     .portfolio-all{
@@ -59,16 +48,22 @@ html{
         flex-direction: row;
         justify-content: space-between;
         width: 83rem;
+        overflow: hidden;
 
-        .portfolio-img{
-            background-image: url("../img/");
+        .img{
+            background-image: url("../img/7.jpg");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
             width: 39rem;
             height: 41.5rem;
             margin-bottom: 5rem;
+            transition: .8s ease;
 
+        }:hover{
+            transform: scale(1.03) translateZ(0);
+            transition: 0.8s ease;
+            // box-sizing: border-box;
         }
         a{
             padding-left: 3rem;
