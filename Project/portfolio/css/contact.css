@@ -30,6 +30,19 @@
   padding-bottom: 5rem;
 }
 
+@media only screen and (max-device-width: 1280px) {
+  .contact .contact-all {
+    margin: 0 auto !important;
+    margin-top: 3% !important;
+  }
+}
+
+@media only screen and (max-device-width: 990px) {
+  .contact .contact-all {
+    width: 100% !important;
+  }
+}
+
 .contact .contact-all .contact-head {
   width: 100%;
   display: -webkit-box;
@@ -43,6 +56,18 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 5rem;
+}
+
+@media only screen and (max-device-width: 1280px) {
+  .contact .contact-all .contact-head {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-device-width: 990px) {
+  .contact .contact-all .contact-head {
+    margin-left: 15% !important;
+  }
 }
 
 .contact .contact-all .contact-head .contact-div {
@@ -93,6 +118,12 @@
   padding: 1rem 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 3rem;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .contact .contact-all .contact-inputs input {
+    width: 85vw !important;
+  }
 }
 
 .contact .contact-all .contact-inputs input::-webkit-input-placeholder {
@@ -155,6 +186,12 @@
   margin-bottom: 3rem;
 }
 
+@media only screen and (max-device-width: 990px) {
+  .contact .contact-all .contact-textbox input {
+    width: 85vw !important;
+  }
+}
+
 .contact .contact-all .contact-textbox input::-webkit-input-placeholder {
   color: #fff;
   font-style: italic;
@@ -201,6 +238,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .contact .contact-all .contact-button {
+    margin-right: 49% !important;
+  }
 }
 
 .contact .contact-all .contact-button .contact-btn {

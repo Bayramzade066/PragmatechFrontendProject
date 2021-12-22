@@ -20,12 +20,27 @@
         padding-bottom: 10rem;
         margin-right: 5rem;
 
+        @include respond(desktop){
+            margin: 0 auto !important;
+            // flex-direction: column !important;
+            margin-top: 3% !important;
+          }
+        @include respond(laptop){
+            width: 100% !important;
+        }
+
         .cards{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             width: 83rem;
             margin-bottom: 7rem;
+
+            @include respond(laptop){
+                width: 70vw !important;
+                margin-bottom: 0 !important;
+                flex-direction: column !important;
+            }
             .card{
                 width: 39rem;
                 height: 49.5rem;
@@ -35,6 +50,11 @@
                 align-items: center;
                 box-shadow: 0 0 15px #252525;
                 overflow: hidden;
+
+                @include respond(laptop){
+                    width: 70vw !important;
+                    margin-bottom: 4rem !important;
+                }
 
                 .card-img{
                     width: 100%;
@@ -122,6 +142,15 @@
             justify-content: left;
             flex-direction: column;
             margin-bottom: 5rem;
+
+            
+            @include respond(desktop){
+                margin-left: 0 !important;
+                }
+                @include respond(laptop){
+                    margin-left: 30% !important;
+                }
+
             .blogs-div{
                 box-sizing: border-box;
                 background-color: hsla(0,0%,100%,.08);

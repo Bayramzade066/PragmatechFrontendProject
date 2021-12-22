@@ -17,6 +17,16 @@
         padding-top: 10rem;
         padding-bottom: 10rem;
         margin-right: 5rem;
+
+        @include respond(desktop){
+            margin: 0 auto !important;
+            // flex-direction: column !important;
+            margin-top: 3% !important;
+          }
+        @include respond(laptop){
+            width: 100% !important;
+        }
+
         .portfolio-head{
             width: 100%;
             display: flex;
@@ -24,6 +34,13 @@
             flex-direction: column;
             margin-bottom: 5rem;
             margin-left: 5rem;
+
+            @include respond(desktop){
+            margin-left: 0 !important;
+            }
+            @include respond(laptop){
+                margin-left: 30% !important;
+            }
             .portfolio-div{
                 box-sizing: border-box;
                 background-color: hsla(0,0%,100%,.08);
@@ -50,6 +67,9 @@
         width: 83rem;
         overflow: hidden;
 
+        @include respond(laptop){
+            width: 70vw !important;
+        }
         .img{
             background-image: url("../img/7.jpg");
             background-position: center center;
@@ -60,6 +80,10 @@
             margin-bottom: 5rem;
             transition: .8s ease;
 
+            @include respond(laptop){
+                width: 70vw !important;
+            }
+
         }:hover{
             transform: scale(1.03) translateZ(0);
             transition: 0.8s ease;
@@ -67,6 +91,10 @@
         }
         a{
             padding-left: 3rem;
+
+            @include respond(desktop){
+                padding-left: 0 !important
+            }
         }
     }
 }

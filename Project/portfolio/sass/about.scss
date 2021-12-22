@@ -1,3 +1,5 @@
+@import "./breakpoint.scss";
+
 .about{
     width: 100%;
     display: none;
@@ -13,7 +15,16 @@
         margin-left: 30%;
         padding-top: 10rem;
         padding-bottom: 10rem;
-        padding-top: 10rem;
+
+        @include respond(desktop){
+            margin: 0 auto !important;
+            flex-direction: column !important;
+            margin-top: 3% !important;
+          }
+        @include respond(laptop){
+            width: 100% !important;
+        }
+
         .about-img{
             width: 84rem;
             height: 48rem;
@@ -22,6 +33,11 @@
             background-size: cover;
             background-position: center;
             z-index: 99;
+
+            @include respond(laptop){
+                width: 84.84vw !important;
+                height: 70vw !important;
+            }
         }
         .about-info{
             display: flex;
@@ -30,9 +46,23 @@
             align-items: center;
             width: 84rem;
             margin-top: 3rem;
+
+            @include respond(laptop){
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                width: 84.84vw !important;
+                // margin-left: 15% !important;
+            }
+
             .about-text1{
                 // margin-right: 12rem;
                 width: 40rem;
+
+                @include respond(laptop){
+                    width: 100% !important;
+                }
+
+                
                 h3{
                     font-size: 2.2rem;
                     margin-bottom: 2.5rem;
@@ -44,12 +74,22 @@
                     letter-spacing: .5px;
                     font-weight: 400;
                     color:#bbbbbb;
+
+                    @include respond(laptop){
+                        width: 100% !important;
+                    }
                 }
 
             }
             .about-text2{
                 width: 40rem;
                 padding-left: 5.5rem;
+
+                @include respond(laptop){
+                    padding-left: 0 !important;
+                    margin-top: 30px !important;
+                    width: 100% !important;
+                }
                 .about-data {
                 text-align: left;
                 font-size: 1.5rem;
@@ -58,6 +98,10 @@
                     font-weight: 400;
                     color:#bbbbbb;
                     padding-left: 3rem;
+
+                    @include respond(laptop){
+                        padding-left: 0 !important;
+                    }
                 span{
                     display: inline-block;
                     color: #ffffff;

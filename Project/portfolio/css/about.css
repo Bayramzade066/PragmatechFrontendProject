@@ -28,7 +28,23 @@
   margin-left: 30%;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  padding-top: 10rem;
+}
+
+@media only screen and (max-device-width: 1280px) {
+  .about .about-all {
+    margin: 0 auto !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    margin-top: 3% !important;
+  }
+}
+
+@media only screen and (max-device-width: 990px) {
+  .about .about-all {
+    width: 100% !important;
+  }
 }
 
 .about .about-all .about-img {
@@ -39,6 +55,13 @@
   background-size: cover;
   background-position: center;
   z-index: 99;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .about .about-all .about-img {
+    width: 84.84vw !important;
+    height: 70vw !important;
+  }
 }
 
 .about .about-all .about-info {
@@ -59,8 +82,27 @@
   margin-top: 3rem;
 }
 
+@media only screen and (max-device-width: 990px) {
+  .about .about-all .about-info {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    width: 84.84vw !important;
+  }
+}
+
 .about .about-all .about-info .about-text1 {
   width: 40rem;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .about .about-all .about-info .about-text1 {
+    width: 100% !important;
+  }
 }
 
 .about .about-all .about-info .about-text1 h3 {
@@ -77,9 +119,23 @@
   color: #bbbbbb;
 }
 
+@media only screen and (max-device-width: 990px) {
+  .about .about-all .about-info .about-text1 p {
+    width: 100% !important;
+  }
+}
+
 .about .about-all .about-info .about-text2 {
   width: 40rem;
   padding-left: 5.5rem;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .about .about-all .about-info .about-text2 {
+    padding-left: 0 !important;
+    margin-top: 30px !important;
+    width: 100% !important;
+  }
 }
 
 .about .about-all .about-info .about-text2 .about-data {
@@ -90,6 +146,12 @@
   font-weight: 400;
   color: #bbbbbb;
   padding-left: 3rem;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .about .about-all .about-info .about-text2 .about-data {
+    padding-left: 0 !important;
+  }
 }
 
 .about .about-all .about-info .about-text2 .about-data span {

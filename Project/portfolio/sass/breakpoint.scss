@@ -1,0 +1,43 @@
+
+
+@mixin respond ($breakpoint) {
+
+    @if $breakpoint==lgscreen{
+     
+
+        @media only screen and (min-device-width:1350px) {
+          @content;
+        }
+      }
+
+
+      @if $breakpoint==desktop{
+        
+
+        @media only screen and (max-device-width:1280px) {
+          @content;
+        }
+      }
+
+      @if $breakpoint==laptop{
+     
+
+        @media only screen and (max-device-width: 990px) {
+          @content;
+        }
+      }
+
+    @if $breakpoint==tablet {
+     
+
+    @media only screen and (max-device-width: 760px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==mobile {
+    @media only screen and (max-device-width: 480px) {
+      @content;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-
+@import "./breakpoint.scss";
 
 .contact{
     width: 100%;
@@ -15,12 +15,31 @@
         margin-left: 30%;
         padding-top: 5rem;
         padding-bottom: 5rem;
+
+        @include respond(desktop){
+            margin: 0 auto !important;
+            // flex-direction: column !important;
+            margin-top: 3% !important;
+          }
+        @include respond(laptop){
+            width: 100% !important;
+        }
+
         .contact-head{
             width: 100%;
             display: flex;
             justify-content: left;
             flex-direction: column;
             margin-bottom: 5rem;
+
+            @include respond(desktop){
+                margin-left: 0 !important;
+                }
+                @include respond(laptop){
+                    margin-left: 15% !important;
+                }
+
+
             .contact-div{
                 box-sizing: border-box;
                 background-color: hsla(0,0%,100%,.08);
@@ -54,6 +73,11 @@
                 padding: 1rem 1.5rem;
                 border: 1px solid hsla(0,0%,100%,.2);
                 margin-bottom: 3rem;
+
+                @include respond(laptop){
+                    width: 85vw !important;
+                }
+
                 &::placeholder{
                 color: #fff;
                 font-style: italic;
@@ -61,6 +85,8 @@
                 font-weight: 500;
                 letter-spacing: 0.2rem;
                 line-height: 1.6rem;
+
+                
                 }
             }
         }
@@ -79,6 +105,11 @@
                 padding-bottom: 8rem;
                 border: 1px solid hsla(0,0%,100%,.2);
                 margin-bottom: 3rem;
+
+                @include respond(laptop){
+                    width: 85vw !important;
+                }
+
                 &::placeholder{
                 color: #fff;
                 font-style: italic;
@@ -86,6 +117,8 @@
                 font-weight: 500;
                 letter-spacing: 0.2rem;
                 line-height: 1.6rem;
+
+                
                 }
             }
         }
@@ -93,6 +126,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include respond(laptop){
+                margin-right: 49% !important;
+            }
+
 
             .contact-btn{
                 color: black;
@@ -106,7 +144,9 @@
                 transition: all 0.5s;
                 border-radius: 0.2rem;
 
-
+               
+    
+                
             &:hover{
                 letter-spacing: 1.7px;
                     font-size: 1.5rem;
