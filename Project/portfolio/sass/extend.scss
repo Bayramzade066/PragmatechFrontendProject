@@ -5,6 +5,10 @@
 @import "./contact.scss";
 @import "./bg.sass";
 
+.lines{
+    z-index: -9999;
+}
+
 
 // reset
 *{

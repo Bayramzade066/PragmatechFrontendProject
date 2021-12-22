@@ -239,7 +239,7 @@
 .about .about-all .about-img {
   width: 84rem;
   height: 48rem;
-  background-image: url("../img/1.jpg");
+  background-image: url("../img/WhatsApp Image 2021-12-21 at 22.04.18.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -936,6 +936,10 @@ body {
   100% {
     top: 110%;
   }
+}
+
+.lines {
+  z-index: -9999;
 }
 
 * {
