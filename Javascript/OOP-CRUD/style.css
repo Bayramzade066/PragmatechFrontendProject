@@ -2,9 +2,10 @@
     font-size: 14px;
 }
 body{
-    background-image: url(Geometric_abstract_grey_background_for_bussines_templates_website_wallpapers.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 .basliq {
     text-align: center;
