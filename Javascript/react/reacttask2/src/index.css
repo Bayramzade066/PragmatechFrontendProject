@@ -25,7 +25,7 @@ ol, ul {
 }
 
 .square {
-
+  background: none;
   border: 2px solid rgb(255, 255, 255);
   float: left;
   font-size: 50px;
@@ -37,9 +37,12 @@ ol, ul {
   padding: 0;
   text-align: center;
   width:10rem;
+  color: white;
+  cursor: pointer;
 }
 
 .square:focus {
+  color: white;
   outline: none;
 }
 
@@ -74,4 +77,18 @@ ol, ul {
 }
 .game-board{
   background: none;
+}
+
+.gs{
+  color: rgb(146, 50, 146);
+  font-size: 18px;
+  background-color: black;
+display: none;
+justify-content: center;
+border: 2px solid rgb(146, 50, 146);
+margin-top: 4rem;
+padding: 10px;
+align-items: center;
+cursor: pointer ;
+margin-left: 7.8rem;
 }
