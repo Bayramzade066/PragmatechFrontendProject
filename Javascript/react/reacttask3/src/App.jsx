@@ -1,24 +1,32 @@
 
+// nav bar with Router
+
 import './App.css';
-import {Router, Route, Routes } from 'react-router-dom'
-import Home from './components/home';
-
-
-
-
+import React from 'react';
+import Navbar from './components/navbar';
+import {Routes,Route } from "react-router-dom"
+import Home from './components/Home'
+import About from './components/About'
+import Team from './components/Team'
 
 
 
 
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-      </Routes>
-    </Router>
-  );
+  return( <div>
+    <Navbar/>
+    <div className="container">
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/About" element={<About/>} />
+      <Route path="/Team" element={<Team/>} />
+    </Routes>
+    </div>
+    
+  </div>
+  )
+
 }
 
 export default App;

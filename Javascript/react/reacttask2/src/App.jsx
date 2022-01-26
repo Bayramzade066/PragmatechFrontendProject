@@ -1,15 +1,16 @@
+// tictactoe game
+
+
 
 import './App.css';
-
+import Game from './component/tictactoe/game';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className='background'>
+      <Game/>
     </div>
-    
   );
-  
 }
 
 export default App;

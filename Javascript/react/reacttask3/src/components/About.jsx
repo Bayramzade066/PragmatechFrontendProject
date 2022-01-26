@@ -1,10 +1,11 @@
 import React from 'react';
 import Button from './btn';
 
-export default function Home() {
+export default function About() {
   return <div className='flex justify-center items-center'>
     <Button/>
-      This Home Page
+      This About page
   </div>;
 }
+
 
