@@ -244,7 +244,7 @@ const Home = () =>{
   
 
  const map =  data.map((user) =>  
-         <Link to= {`/user/${user.id,user.name,user.username,user.email}`} ><li>{user.name}</li></Link>
+         <Link to= {`/user/${user.id}`} ><li>{user.name}</li></Link>
         );
  
       return(
