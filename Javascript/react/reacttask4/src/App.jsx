@@ -3,7 +3,7 @@
 
 import User from './User';
 import './App.css';
-import {Fragment, useRef, useState} from 'react';
+// import {Fragment, useRef, useState} from 'react';
 import {BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; 
 
 export const data = [
@@ -244,11 +244,17 @@ const Home = () =>{
   
 
  const map =  data.map((user) =>  
-         <Link to= {`/user/${user.id}`} ><li>{user.name}</li></Link>
+         <Link to= {`/user/${user.id}`} ><div className='flex  items-center'>
+           <span className='mb-5 mr-2 text-3xl font-bold  text-teal-200'>User Name : </span>
+           <li className='outline-none mb-5 text-3xl transition-all-0.5s  text-white hover:text-emerald-700 transition-all-0.5s'> {user.name}</li>
+           </div>
+         </Link>
         );
  
-      return(
-        <ul>{map}</ul>
+      return(<div className=' w-full h-screen flex flex-col justify-center items-center'>
+        <h1 className='mb-10 text-4xl uppercase text-teal-600 font-bold mr-20'>User List</h1>
+        <ul className='outline-none '> {map}</ul>
+        </div>
       )
   
 }

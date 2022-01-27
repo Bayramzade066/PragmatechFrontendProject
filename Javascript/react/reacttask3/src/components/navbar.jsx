@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link ,NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return <div className="h-[100px] bg-teal-600 flex justify-center items-center space-x-3">
