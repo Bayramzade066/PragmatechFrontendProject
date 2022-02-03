@@ -42,7 +42,7 @@
       font-size: 14px;
       border-radius: 3px;
     }
-    .boxes{
+    .boxs{
       width: 100%;
       padding: 0 20px;
       display: flex;
@@ -68,12 +68,15 @@
     h2{
       font-size: 18px;
     }
-    
+    .bgloading{
+        display: flex;
+        
+    }
     .loading{
-      width: 100px;
-      height: 100px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
-      background-color: rgb(67, 221, 67);
+      background-color: rgb(21, 196, 21);
       animation:.7s anima infinite;
       margin-left: 42%;
     }

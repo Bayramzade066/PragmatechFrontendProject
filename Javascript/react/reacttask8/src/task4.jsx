@@ -101,7 +101,7 @@ function App() {
     
     <div className='task4'>
       <div className="search"> <input onChange={catchdata} type="search" /><button onClick={filterdata} className='btn'>Axtar</button></div>
-      <div className="boxes">
+      <div className="boxs">
 
         {datapaper ? datapaper.map((item) => {
           return <div key={item.id} className="box">
@@ -111,7 +111,7 @@ function App() {
             <div>Country: {item.country}</div>
             <div>City: {item.city[0] ? item.city[0] : "Not Found"}</div>
           </div>
-        }) : <div className='loading'> </div>}
+        }) : <div className='bgloading'> <div className='loading'></div> <div className='loading'></div> <div className='loading'></div> </div>}
 
       </div>
       <div className="buttons">
