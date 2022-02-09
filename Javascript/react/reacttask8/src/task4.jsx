@@ -95,7 +95,32 @@ function App() {
     
 
   return (
-    <div>App</div>
+    
+    <div className='task4'>
+      <div className="search"> <input onChange={catchdata} type="search" /><button onClick={filterdata} className='btn'>Axtar</button></div>
+      <div className="boxes">
+
+        {datapaper ? datapaper.map((item) => {
+          return <div key={item.id} className="box">
+            <h1>Title: {item.title}</h1>
+            <h2>Year: {item.start_year}</h2>
+            <div>Publisher: {item.publisher ? item.publisher : "Not Found"}</div>
+            <div>Country: {item.country}</div>
+            <div>City: {item.city[0] ? item.city[0] : "Not Found"}</div>
+          </div>
+        }) : <div className='loading'> </div>}
+
+      </div>
+      <div className="buttons">
+        {buttons.map((item) => {
+          return <button onClick={changepaper} id={item.id} key={item.id} className="pagination">{item.id}</button>
+        })}
+
+
+
+      </div>
+
+    </div>
   )
 }
 
