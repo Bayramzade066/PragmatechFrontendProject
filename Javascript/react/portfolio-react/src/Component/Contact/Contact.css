@@ -1,0 +1,140 @@
+.contact .__contact {
+  width: 100%;
+  height: 58.13rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+}
+
+.contact .__contact .__left {
+  max-width: 35%;
+  padding: 3rem 1.5rem 2rem 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.contact .__contact .__left h1 {
+  font-size: 4rem;
+  font-family: "Playfair Display",serif;
+  font-weight: 600;
+  color: #171717;
+}
+
+.contact .__contact .__left p {
+  font-size: 1.55rem;
+  line-height: 1.65;
+  color: #5f5f5f;
+}
+
+.contact .__contact .__left p span {
+  color: #171717;
+  padding-right: 0.5rem;
+  font-weight: 700;
+}
+
+.contact .__contact .__right {
+  max-width: 65%;
+  padding: 3rem 2rem 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .__contact .__right .__twoinputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.contact .__contact .__right .__twoinputs input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 31.5rem;
+  height: 2.6rem;
+  padding: 1.6rem 1rem;
+  font-weight: 400;
+  background-color: #fff;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 0;
+}
+
+.contact .__contact .__right input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 66rem;
+  padding: 1rem 1rem;
+  font-weight: 400;
+  background-color: #fff;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 0;
+  margin-bottom: 3rem;
+}
+
+.contact .__contact .__right input::-webkit-input-placeholder {
+  color: #495057;
+  opacity: 0.8;
+}
+
+.contact .__contact .__right input:-ms-input-placeholder {
+  color: #495057;
+  opacity: 0.8;
+}
+
+.contact .__contact .__right input::-ms-input-placeholder {
+  color: #495057;
+  opacity: 0.8;
+}
+
+.contact .__contact .__right input::placeholder {
+  color: #495057;
+  opacity: 0.8;
+}
+
+.contact .__contact .__right .textarea {
+  width: 100%;
+  height: 13.750rem;
+  padding-bottom: 10rem;
+}
+
+.contact .__contact .__right button {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1.8rem 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  background-color: #252525;
+  border: none;
+  width: 16.3rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.contact .__contact .__right button:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #444;
+}
+
+input:focus-visible {
+  outline: #80bdff auto 1.5px;
+}

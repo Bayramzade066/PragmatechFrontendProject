@@ -2,7 +2,6 @@ import React,{useEffect, useState} from 'react'
 import './Navbar.css'
 import { NavLink, useLocation} from 'react-router-dom';
 
-import Logo from './logo.svg';
 
 
 
@@ -30,7 +29,7 @@ function Navbar() {
     <header className={headeranima ? "headerActive" : ""}>
       <div className="navbar">
         <div className="logo">
-          <img src={Logo} alt="Logo" />
+          <img src={"/image/logo.svg"} alt="Logo" />
         </div>
         <div className="navlinks">
           <NavLink style={({ isActive }) => ({

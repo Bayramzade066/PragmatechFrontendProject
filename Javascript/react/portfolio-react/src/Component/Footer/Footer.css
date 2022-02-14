@@ -18,25 +18,26 @@ footer .footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 0.5rem;
 }
 
 footer .footer .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.4rem;
   padding-bottom: 1.2rem;
 }
 
 footer .footer .socials svg {
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   color: #444;
   opacity: .5;
 }
 
 footer .footer .texts p {
   margin-bottom: 1.6rem;
-  font-size: 1.45rem;
+  font-size: 1.4rem;
   color: #444;
   opacity: .9;
   font-weight: 400;

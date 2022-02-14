@@ -9,12 +9,13 @@ footer{
         display: flex;
         flex-direction: column;
         align-items:center;
+        margin-top: 0.5rem;
         
         .socials{
             display: flex;
-            gap:1.5rem;
+            gap:1.4rem;
             svg{
-                font-size: 1.75rem;
+                font-size: 1.7rem;
                 color: #444 ;
                 opacity:.5
             }
@@ -24,7 +25,7 @@ footer{
         .texts{
             p{
                 margin-bottom: 1.6rem;
-                font-size:1.45rem;
+                font-size:1.4rem;
                 color: #444 ;
                 opacity:.9;
                 font-weight:400;
