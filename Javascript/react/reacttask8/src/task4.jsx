@@ -58,6 +58,41 @@ function App() {
     }, [])
   
 
+    useEffect(() => {
+        fetch(`https://chroniclingamerica.loc.gov/search/titles/results/?terms=michigan&format=json&page=${selecteditem}`)
+          .then((response) => response.json())
+          .then((data) => {
+            setdatapaper(data.items)
+          })
+    
+    
+      }, [selecteditem])
+    
+    
+      const changepaper = (e) => {
+        setselecteditem(e.target.id)
+    
+      }
+    
+    
+      const filterdata = (e) => {
+          
+          
+        fetch(`https://chroniclingamerica.loc.gov/search/titles/results/?terms=${datafilter}&format=json&page=${selecteditem}`)
+          .then((response) => response.json())
+          .then((data) => {
+            setdatapaper(data.items)
+            
+          })
+      }
+      
+      const catchdata=(e)=>{
+            setdatafilter(e.target.value)
+      }
+    
+    
+    
+    
 
   return (
     <div>App</div>
