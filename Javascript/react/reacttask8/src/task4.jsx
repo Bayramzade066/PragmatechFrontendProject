@@ -111,7 +111,7 @@ function App() {
             <div>Country: {item.country}</div>
             <div>City: {item.city[0] ? item.city[0] : "Not Found"}</div>
           </div>
-        }) : <div className='bgloading'> <div className='loading'></div> <div className='loading'></div> <div className='loading'></div> </div>}
+        }) : <div className='loading'></div>}
 
       </div>
       <div className="buttons">
