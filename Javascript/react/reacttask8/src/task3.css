@@ -23,10 +23,14 @@
     width: 100%;
     height: max-content;
     display: flex;
+    flex-direction: column;
     justify-content:center;
-    gap: 20px;
+    align-items: center;
+    gap: 30px;
 }
 .info__item{
+    font-size: 20px;
+    letter-spacing:1px;
     color: white;
 }
 input{
@@ -37,15 +41,18 @@ input{
     font-size: 17px;
     border: 2px solid aqua;
     border-radius: 5px;
+    margin-top: 70px;
 
 }
 button{
     width: 150px;
-    height: 30px;
+    height: 35px;
     background-color: rgb(218, 208, 208);
     border: none;
     transition: 0.5s;
     border-radius: 5px;
+    font-size: 16px;
+    font-weight:600;
 }
 button:hover{
     background-color: rgba(218, 208, 208, 0.37);

@@ -5,7 +5,6 @@ function App() {
 
     const [info, setinfo] = useState("")
     const [vaccine, setvaccine] = useState("")
-
     const [percentage, setpercentage] = useState("")
 
 
@@ -51,7 +50,7 @@ function App() {
         <div className="info__item">Vaksinasiya faizi: {percentage}</div>
         <div className="info__item">Vaksinasiya sayı: {vaccine.people_vaccinated}</div>
     </div>
-    <input ref={inputvalue} type="text" />
+    <input ref={inputvalue} placeholder="Ölkə adı daxil edin.." type="text" />
     <button onClick={show} >Göstər</button>
 </div>
   )
