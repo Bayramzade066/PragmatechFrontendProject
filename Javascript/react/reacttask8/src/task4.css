@@ -68,17 +68,13 @@
     h2{
       font-size: 18px;
     }
-    .bgloading{
-        display: flex;
-        
-    }
     .loading{
       width: 50px;
       height: 50px;
       border-radius: 50%;
       background-color: rgb(21, 196, 21);
       animation:.7s anima infinite;
-      margin-left: 42%;
+      margin-left: 45%;
     }
     
     @keyframes anima{
